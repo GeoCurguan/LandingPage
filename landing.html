@@ -1,0 +1,208 @@
+<html>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400;500&family=Yanone+Kaffeesatz:wght@500&display=swap');
+        html, body{
+            padding: 0;
+            margin: 0;
+            font-family: 'Fira Sans', sans-serif;
+        }
+        header{
+            width: 100%;
+            height: 12.5%;
+            position: absolute;
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+        }
+        .logo{
+            width: 20%;
+            height: 100%;
+            background-image: url('heyAndes_logo.svg');
+            background-size: 200px;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+        .navMenu{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 50%;
+            height: 100%;
+            font-size: 20px;
+        }
+        ul.nav {
+            padding-left: 0px;
+            text-align: center;
+        }
+        ul.nav li {
+            display: inline-block;
+            padding: 10px 20px;
+            transition: color .25s;
+        }
+        ul.nav li:hover {
+            cursor: pointer;
+            color: #888888;
+            transition: color .25s;
+        }
+        h1{
+            font-weight: 500;
+            font-size: 90px;
+            word-spacing: 5px;
+            margin-bottom: 0;
+        }
+        .contenedor{
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+        .bgWithOverlay{
+            width: 50%;
+            height: 100%;
+            background-image: url('iceland.jpg');
+            background-size: cover;
+            background-position: 50% 50%;
+            position: relative;
+            z-index: 1;
+        }
+        .bgWithOverlay::after{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(56, 113, 120, 0.8);
+        }
+        .bgMidWithoutOverlayContainer{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            overflow: visible;
+        }
+        .bgMidWithoutOverlay{
+            width: 130%;
+            height: 70%;
+            margin-bottom: 5%;
+            background-image: url('iceland.jpg');
+            background-size: cover;
+            background-position: 50% 100%;
+            margin-left: -30%;
+            position: relative;
+            z-index: 2;
+            color: #fff;
+        }
+        .textLanding{
+            width: 70%;
+            margin-top: 10%;
+            margin-left: -40%;
+        }
+        .textLanding p{
+            font-weight: 200;
+            font-size: 20px;
+        }
+        .mainService{
+            width: 90%;
+            margin-left: 10%;
+            height: 32.5%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .serviceCard{
+            width: 30%;
+            height: 100%;
+            position: relative;
+            background-color: black;
+            background-size: cover;
+            background-position: 50% 50%;
+            display: flex;
+            align-items: center;
+        }
+        .serviceCard h2{
+            margin: 0;
+            position: relative;
+            z-index: 1;
+            letter-spacing: 1px;
+            margin-left: 10%;
+        }
+        .serviceCard::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.25);
+            transition: background-color .5s;
+            cursor: pointer;
+        }
+        .serviceCard:hover::after{
+            background-color: rgba(0, 0, 0, 0);
+            transition: background-color .5s;
+        }
+        .serviceCard:nth-of-type(1){
+            background-image: url(montañas.jpg);
+        }
+        .serviceCard:nth-of-type(2){
+            background-image: url(tropical.jpg);
+        }
+        .serviceCard:nth-of-type(3){
+            background-image: url(patagonia.jpg);
+        }
+        button{
+            font-family: 'Fira Sans', sans-serif;
+            font-weight: bold;
+            font-size: 30px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 40px;
+            padding-right: 40px;
+            background-color: #ff9d00;
+            border: none;
+            cursor: pointer;
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+        }
+    </style>
+    <header>
+        <div class="logo"></div>
+        <div class="navMenu">
+            <ul class="nav">
+                <li>Home</li>
+                <li>Agencies</li>
+                <li>Experiences</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </header>
+    <div class="contenedor">
+        <div class="bgWithOverlay"></div>
+        <div class="bgMidWithoutOverlayContainer">
+            <div class="bgMidWithoutOverlay">
+                <div class="textLanding">
+                    <h1>Create a perfect trip <br> - with our planner</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ultricies tristique nulla aliquet enim tortor at auctor urna nunc.
+                        Viverra nam libero justo laoreet sit amet cursus sit amet.
+                        Imperdiet proin fermentum leo vel orci. Eu sem integer vitae justo
+                        eget magna fermentum iaculis eu. Suspendisse sed nisi lacus sed viverra
+                        tellus in hac. Odio tempor orci dapibus ultrices in.
+                    </p>
+                    <button>BUILD YOUR PLAN</button>
+                </div>
+                <div class="mainService">
+                    <div class="serviceCard">
+                        <h2>Mountain<br>Landscape</h2>
+                    </div>
+                    <div class="serviceCard">
+                        <h2>Nice<br>Beach</h2>
+                    </div>
+                    <div class="serviceCard">
+                        <h2>Endless<br>Forest</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>
