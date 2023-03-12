@@ -18,7 +18,7 @@
             width: 20%;
             height: 100%;
             background-image: url('heyAndes_logo.svg');
-            background-size: 200px;
+            background-size: 8.5vw;
             background-position: 50% 50%;
             background-repeat: no-repeat;
         }
@@ -46,9 +46,12 @@
         }
         h1{
             font-weight: 500;
-            font-size: 90px;
+            /*font-size: 90px;*/
+            font-size: 4.8vw;
             word-spacing: 5px;
             margin-bottom: 0;
+            white-space: nowrap;
+
         }
         .contenedor{
             width: 100%;
@@ -76,6 +79,7 @@
         }
         .bgMidWithoutOverlayContainer{
             width: 50%;
+            height: 100%;
             display: flex;
             align-items: center;
             overflow: visible;
@@ -99,14 +103,21 @@
         }
         .textLanding p{
             font-weight: 200;
-            font-size: 20px;
+            /*font-size: 20px;*/
+            font-size: 1vw;
+            margin: 0;
+        }
+        .textLanding button{
+            margin-top: 5%;
         }
         .mainService{
             width: 90%;
             margin-left: 10%;
             height: 32.5%;
+            margin-top: 2.5%;
             display: flex;
             justify-content: space-between;
+            background-color: red;
         }
         .serviceCard{
             width: 30%;
@@ -162,6 +173,34 @@
             cursor: pointer;
             font-family: 'Yanone Kaffeesatz', sans-serif;
         }
+        @media only screen and (max-width:1304px) {
+            .mainService{
+                margin-top: 15%;
+            }
+        }
+        @media only screen and (max-width:1024px) {
+            .mainService{
+                margin-top: 35%;
+            }
+            .navMenu{
+                font-size: 16px;
+            }
+        }
+        @media only screen and (max-width: 767px){
+            .bgWithOverlay{
+                display: none;
+            }
+            .bgMidWithoutOverlayContainer{
+                width: 100%;
+
+            }
+            .textLanding{
+            width: 70%;
+            margin-top: 10%;
+                margin-left: 0%;
+            }
+        }
+
     </style>
     <header>
         <div class="logo"></div>
@@ -186,8 +225,7 @@
                         aliqua. Ultricies tristique nulla aliquet enim tortor at auctor urna nunc.
                         Viverra nam libero justo laoreet sit amet cursus sit amet.
                         Imperdiet proin fermentum leo vel orci. Eu sem integer vitae justo
-                        eget magna fermentum iaculis eu. Suspendisse sed nisi lacus sed viverra
-                        tellus in hac. Odio tempor orci dapibus ultrices in.
+                        eget magna fermentum iaculis eu.
                     </p>
                     <button>BUILD YOUR PLAN</button>
                 </div>
