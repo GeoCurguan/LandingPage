@@ -117,7 +117,6 @@
             margin-top: 2.5%;
             display: flex;
             justify-content: space-between;
-            background-color: red;
         }
         .serviceCard{
             width: 30%;
@@ -187,17 +186,52 @@
             }
         }
         @media only screen and (max-width: 767px){
+            header .logo{
+                width: 100%;
+                background-size: 175px;
+            }
+            header .navMenu{
+                display: none;
+            }
             .bgWithOverlay{
                 display: none;
             }
             .bgMidWithoutOverlayContainer{
                 width: 100%;
-
+                align-items: flex-start;
+                justify-content: center;
+                z-index: 0;
+            }
+            .bgMidWithoutOverlay{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                margin-left: 0;
             }
             .textLanding{
-            width: 70%;
-            margin-top: 10%;
+                width: 70%;
+                margin-top: 10%;
                 margin-left: 0%;
+                text-align: center;
+            }
+            .textLanding h1{
+                font-size: 40px;
+            }
+            .textLanding p{
+                display: none;
+                font-size: 14px;
+            }
+            .textLanding button{
+                margin-top: 90px;
+            }
+            .mainService{
+                width: 100%;
+                margin-top: 50px;
+                margin-left: 0;
+            }
+            .serviceCard{
+                height: 150px;
             }
         }
 
