@@ -1,5 +1,5 @@
-<h1>LandingPage usando flex boxes</h1>
-<p>LandingPage creada con css y html, usando flex boxes.</p>
+<h1>LandingPage usando flexbox</h1>
+<p>LandingPage creada con HTML y CSS, usando flexbox.</p>
 <h3>Desktop:</h3>
 <img src="https://i.imgur.com/FuFt3AT.png"></img>
 <h3>Mobile</h3>
